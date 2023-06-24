@@ -1,5 +1,5 @@
 const geoApiUrl = "https://api.api-ninjas.com/v1/geocoding?city="
-const geoAPIKey = "IHJ8vyMmvPEcoCpmk+Jc8Q==MinUzFV6mTSpFzxb"
+
 
 var currentGeoLocation = {
     "name": "Emden",
