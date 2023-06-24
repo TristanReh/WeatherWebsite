@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/searchbar.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <script src="https://kit.fontawesome.com/f4a9854c34.js" crossorigin="anonymous"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="side-bar">
+            <div class="sidebar-button">
+                <i class="fa-regular fa-cloud-sun"></i>
+                <span>Weather</span>
+            </div>
+            <div class="sidebar-button">
+                <i class="fa-regular fa-map"></i>
+                <span>Cities</span>
+            </div>
+            <div class="sidebar-button">
+                <i class="fa-regular fa-gear"></i>
+                <span>Settings</span>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input id="search-city-input" type="text" placeholder="Search for cities..." />
+            <div id="search-bar-dropdown">
+            </div>
+        </div>
+
+
+        <div class="empty-spacer"></div>
+        <div class="main-display">
+            <span id="main-city"></span>
+            <span>Chances of rain: 
+                <span id="main-chance-rain"></span>%
+            </span>
+            <span id="main-temperatur"></span>
+            <img id="main-weather-icon">
+        </div>
+        <div class="air-conditions">
+            <span class="air-conditions-title">Air Conditions</span>
+            <span><i class="fa-solid fa-temperature-low"></i> Real Feel<span id="real-feel-temp">30</span></span>
+            <span><i class="fa-solid fa-wind"></i>Wind<span id="wind-speed">30</span></span>
+            <span><i class="fa-solid fa-cloud-rain"></i>Chance of Rain<span id="chance-rain">30</span></span>
+            <span><i class="fa-solid fa-sun"></i>UV Index<span id="uv-index">30</span></span>
+            
+        </div>
+
+        <div class="day-forecast">
+                
+        </div>
+        <div class="week-forecast">
+            
+        </div>
+    </div>
+    
+</body>
+</html>

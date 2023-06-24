@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Emden",
+        "latitude": 53.3670541,
+        "longitude": 7.2058304,
+        "country": "DE",
+        "state": "Lower Saxony"
+    },
+    {
+        "name": "Emden",
+        "latitude": 40.2986538,
+        "longitude": -89.4851011,
+        "country": "US",
+        "state": "Illinois"
+    },
+    {
+        "name": "Emden",
+        "latitude": 52.2654269,
+        "longitude": 11.286945889589049,
+        "country": "DE",
+        "state": "Saxony-Anhalt"
+    },
+    {
+        "name": "Emden",
+        "latitude": 52.2395673,
+        "longitude": 11.2811264,
+        "country": "DE",
+        "state": "Saxony-Anhalt"
+    },
+    {
+        "name": "Emden",
+        "latitude": 39.7964301,
+        "longitude": -91.8629443,
+        "country": "US",
+        "state": "Missouri"
+    }
+]

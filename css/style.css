@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+/* Remove default margin (Abstand) */ 
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b121e;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    padding: 20px;
+
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+   
+    display: grid;
+    grid-template-columns: 100px 60% 30%;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+}
+
+/* Give all div's in the wrapper 5px margin */
+
+
+.wrapper > div {
+    margin: 8px;
+    border-radius: 15px;
+    background-color: #202b3c;
+}
+
+/* Main containers */  
+
+.side-bar {
+    grid-row: 1 / 5;
+}
+
+.sidebar-button {
+    display: flex;
+    flex-direction: column;
+    color: rgb(173, 173, 173);
+    padding: 13px 0;
+    align-items: center;
+    margin-top: 25px;
+    transition: all 100ms ease-in;
+}
+
+.sidebar-button:hover {
+    cursor: pointer;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+.sidebar-button i {
+    margin-bottom: 7px;
+
+}
+
+i {
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.week-forecast {
+    grid-row: 2 / 5;
+    grid-column: 3;
+}
+
+.empty-spacer  {
+    background-color: #0b121e !important;
+}
+
+.main-display {
+    background-color: #0b121e !important;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    padding: 20px;
+}
+
+.main-display #main-city {
+    font-size: 48px;
+}
+
+.main-display span:nth-child(2) {
+    color: grey;
+    font-weight: 700;
+}
+
+.main-display #main-chance-rain {
+    color: grey;
+}
+
+.main-display #main-temperatur {
+   font-size: 35px;
+   font-weight: 1000;
+}
+
+.main-display #main-weather-icon {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    height: 100%;
+}
+
+.day-forecast {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px 1fr;
+    padding: 28px 20px;
+}
+
+.forecast-title {
+    grid-column: 1 / 7;
+    font-weight: 700;
+    color: #c0bebe;
+}
+
+.forecast-hour {
+    color: #c0bebe;
+}
+
+.forecast-image {
+    width: 100%;
+}
+
+.forecast-temp {
+    font-size: 23px;
+}
+
+.today-forecast-element {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    place-items: center;
+    font-weight: 700;
+}
+
+
+
+.week-forecast {
+    display: grid;
+    padding: 28px 20px;
+    font-weight: 700;
+
+}
+
+.week-forecast-day {
+    width: 15%;
+}
+
+.week-forecast-image {
+    height: 100%;
+}
+
+.week-forecast-element {
+    font-weight: 700;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.air-conditions {
+    grid-row: 4;
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-columns: 5fr 3fr;
+    padding: 28px 36px;
+    font-weight: 700;
+}
+
+.air-conditions > span {
+    color: #c0bebe;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+
+}
+
+.air-conditions > span > i {
+    font-size: 25px;
+}
+
+.air-conditions-title {
+    display: block !important;
+    grid-column: 1 / 3;
+}
+
+#chance-rain, #uv-index, #wind-speed, #real-feel-temp {
+    font-size: 26px;
+    color: #ececec;
+    grid-column: 2;
+}
